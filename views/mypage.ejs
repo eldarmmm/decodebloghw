@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My Blog</title>
+
+    <%-include('partials/head.ejs')%>
+
+</head>
+<body>
+
+    <%-include('partials/header.ejs')%>
+
+    <div class="mypage_container">
+        <div class="mypage_main">
+            <div class="mypage_main_1">
+                <h2>Мои Блоги</h2>
+                <a href="/new"><button>Новый блог</button></a>
+            </div>
+            <div class="main_post">
+                <img src="/images/main_1.png" alt="">
+                <h3>Обзор Report Manager от Webix</h3>
+                <p>Осень 2020 года стала плодотворным временем для специалистов Webix.</p>
+                <p>Команда Webix выпустила восьмую версию библиотеки пользовательского интерфейса Webix с двумя новыми комплексными виджетами. Первый - зто Scheduler, о котором мы подробно говорили ранее. Второй виджет - это Gantt chart в JavaScript. Подробную информацию об этом виджете Вы можете найти в статье.</p>
+                <p>Ноябрь продолжает тенденцию, и мы спешим поделиться с Вами новым комплексным виджетом Report Manager. Давайте рассмотрим его.</p>
+                <div class="post_info">
+                    <div>
+                        <img class="post_img" src="/images/icons/calendar.png" alt="calendar">
+                        <p class="post_p">26.06.2020</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/eye.png" alt="eye">
+                        <p class="post_p">21</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/comment.png" alt="comment">
+                        <p class="post_p">4</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/Path.png" alt="path">
+                        <p class="post_p">Веб-разработка</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/Vector.png" alt="user">
+                        <p class="post_p">Nast1289</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_post">
+                <img src="/images/main_2.png" alt="">
+                <h3>Разработчики изобрели методологию высокоскоростного программирования</h3>
+                <p>Осень 2020 года стала плодотворным временем для специалистов Webix.</p>
+                <p>Команда Webix выпустила восьмую версию библиотеки пользовательского интерфейса Webix с двумя новыми комплексными виджетами. Первый - зто Scheduler, о котором мы подробно говорили ранее. Второй виджет - это Gantt chart в JavaScript. Подробную информацию об этом виджете Вы можете найти в статье.</p>
+                <p>Ноябрь продолжает тенденцию, и мы спешим поделиться с Вами новым комплексным виджетом Report Manager. Давайте рассмотрим его.</p>
+                <div class="post_info">
+                    <div>
+                        <img class="post_img" src="/images/icons/calendar.png" alt="calendar">
+                        <p class="post_p">26.06.2020</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/eye.png" alt="eye">
+                        <p class="post_p">21</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/comment.png" alt="comment">
+                        <p class="post_p">4</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/Path.png" alt="path">
+                        <p class="post_p">Веб-разработка</p>
+                    </div>
+                    <div>
+                        <img class="post_img" src="/images/icons/Vector.png" alt="user">
+                        <p class="post_p">Nast1289</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="mypage_info">
+            <img class="avatar" src="/images/icons/avatar.png" alt="">
+            <h4><%=user.name%></h4>
+            <p>В основном пишу про веб - разработку, на React & Redux</p>
+            <p>постов за все время</p>
+            <% 
+                if (user.id == loginUser.id) {
+            %>
+            <a href="">Редактировать</a>
+            <a href="/api/logout">Выход</a>
+            <% 
+                }
+            %>
+        </div>      
+    </div>
+</body>
+</html>

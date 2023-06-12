@@ -1,0 +1,87 @@
+.new_container{
+    margin-top: 50px;
+    padding: 100px 5% 50px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+
+.new_main{
+    padding: 20px 20px;
+    background-color: #fff;
+    min-height: 75vh;
+    width: 80%;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.new_main_1 h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.new_main_1{
+    padding: 65px 65px;
+}
+
+.new_main_1 fieldset{
+    outline: 1px solid #999999;
+    border: 1px solid #999999;
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.new_main_1>fieldset>img{
+    height: 10px;
+}
+
+.new_main_1 button{
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    background-color: #00A2DC;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.new_main_1>fieldset>input {
+    height: 30px;
+    width: 320px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.discr {
+    height: 300px;
+    width: 60%!important;
+    align-items: baseline!important;
+}
+
+.new_main_1>fieldset>select {
+    height: 30px;
+    width: 320px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.new_main_1>fieldset>select>option {
+    margin: 10px 0;
+}

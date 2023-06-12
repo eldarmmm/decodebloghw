@@ -1,0 +1,91 @@
+
+
+.login_h2{
+    font-size: 36px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container1{
+    padding-top: 100px;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.login_email{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login_email input{
+    height: 40px;
+    width: 320px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+}
+
+.login_pass{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login_pass input{
+    border: 1px solid #999999;
+    height: 40px;
+    width: 320px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.login_pass_conf{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login_pass_conf input{
+    border: 1px solid #999999;
+    height: 40px;
+    width: 320px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.login_name{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login_name input{
+    border: 1px solid #999999;
+    height: 40px;
+    width: 320px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.login_a{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    background-color: #00A2DC;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}

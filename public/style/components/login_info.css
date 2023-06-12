@@ -1,0 +1,14 @@
+.login_info {
+    background-color: #FFF3CD;
+    padding: 30px;
+    margin: 0 100px;
+}
+
+.login_info p{
+    font-weight: 700;
+}
+
+.login_info a{
+    color: #00A2DC;
+}
+

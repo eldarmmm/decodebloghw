@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%-include('partials/head.ejs')%>
+
+    <title>Log in</title>
+</head>
+<body>
+    
+    <%-include('partials/header.ejs')%>
+
+    <div class="container">
+        <form action="/api/login" method="POST" class="container1">
+            <h2 class="login_h2">ВХОД</h2>
+            <fieldset class="login_email"><input type="email" placeholder="Введите email" name="email"></fieldset>
+            <fieldset class="login_pass"><input type="password" placeholder="Введите пароль" name="password"></fieldset>
+            <button class="login_a" type="submit">Войти</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%-include('partials/head.ejs')%>
+
+    <title>New Blog</title>
+</head>
+<body>
+    
+    <%-include('partials/header.ejs')%>
+
+    <div class="new_container">
+        <div class="new_main">
+            <form class="new_main_1" action="/api/new" method="POST" enctype="multipart/form-data">
+                <h2>Новый блог</h2>
+                <label for="">Введите заголовок поста</label><fieldset><input type="text" placeholder="Заголовок" name="posttitle"></fieldset>
+                <label for="">Выберите категорию поста</label><fieldset><select name="postcategory" id=""><img src="images/icons/Shape.png" alt="">
+                    <% categories.forEach(categorie => {
+                    
+                    %>
+                        <option value="<%=categorie._id%>"><%=categorie.name%></option>        
+                    <%
+                        })
+                    %>
+                </select></fieldset>
+                <label for="">Прикрепите изображение к посту</label><fieldset class="postimg"><input type="file" name="postimg" placeholder=""></fieldset>
+                <label for="">Пишите...</label><fieldset class="discr"><input type="text" name="postbody" placeholder="Введите описание блога"></fieldset>
+                <button type="submit">Создать</button>
+            </form>
+        </div>      
+    </div>
+</body>
+</html>

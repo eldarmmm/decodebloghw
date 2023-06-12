@@ -1,0 +1,21 @@
+.main_1 h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.main_1 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    width: 70%;
+}
+
+.main_1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
